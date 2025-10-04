@@ -1,0 +1,6 @@
+# === Core Trading & Data ===
+backtrader==1.9.78.123
+pandas>=2.0.0,<3.0
+numpy>=1.24.0,<2.0
+yfinance>=0.2.54
+
