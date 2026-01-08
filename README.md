@@ -1,7 +1,7 @@
-# Algorithmic Trading Foundations — Momentum and Mean Reversion
+# Algorithmic Trading Foundations - Momentum and Mean Reversion
 
 This repository extends the principles introduced in *Ernest P. Chan’s*  
-**Algorithmic Trading: Winning Strategies and Their Rationale**, Chapters 1–3.  
+**Algorithmic Trading: Winning Strategies and Their Rationale**, Chapters 1-3.  
 It translates the theory of bias-free backtesting and disciplined implementation into executable strategies using **Python**, **pandas**, and **backtrader**.
 
 ---
@@ -12,22 +12,22 @@ A trading system is only as reliable as the experiment that tests it.
 This project moves through the same conceptual arc as Chan’s first three chapters:
 
 1. **Chapter 1 — Backtesting Discipline**  
-   Backtests are experiments. Every run here models commissions, bid–ask spread, and next-bar execution to prevent look-ahead bias.  
+   Backtests are experiments. Every run here models commissions, bid-ask spread, and next-bar execution to prevent look-ahead bias.  
    The research and live logic share identical code to eliminate “translation errors.”
 
-2. **Chapter 2 — Testing for Stationarity and Mean Reversion**  
+2. **Chapter 2 - Testing for Stationarity and Mean Reversion**  
    Perfect stationarity is rare; partial stationarity can be traded cautiously.  
    The *MeanRevertZ* strategy detects statistical over-extensions in normalized short-term returns and exits on mean touch, stop-loss, or time decay.
 
-3. **Chapter 3 — Implementing Trading Rules**  
-   Theory becomes code. The *MomentumTS* strategy follows time-series momentum—holding assets that have recently appreciated—and scales exposure inversely with recent volatility.
+3. **Chapter 3 - Implementing Trading Rules**  
+   Theory becomes code. The *MomentumTS* strategy follows time-series momentum—holding assets that have recently appreciated-and scales exposure inversely with recent volatility.
 
 ---
 
 ## Ⅱ. Strategies Implemented
 
 ### 🔹 Momentum TS
-> “If it has gone up, buy it; if it has gone down, sell it — but test honestly.”    
+> “If it has gone up, buy it; if it has gone down, sell it - but test honestly.”    
 > — E. Chan, Ch. 3
 
 **Signal:** L-day cumulative return  
